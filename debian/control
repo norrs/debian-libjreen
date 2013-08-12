@@ -1,0 +1,23 @@
+Source: libjreen
+Priority: extra
+Maintainer: Roy Sindre Norangshol (Rockj) <roy.sindre@norangshol.no>
+Build-Depends: debhelper (>= 8.0.0), cmake, libqca2-dev
+Standards-Version: 3.9.3
+Section: libs
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/libjreen.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libjreen.git;a=summary
+
+#Package: libjreen-dev
+#Section: libdevel
+#Architecture: any
+#Depends: libjreen1 (= ${binary:Version})
+#Description: Qt XMPP Library 
+# Jreen — Free and Opensource Jabber library, written in C++ using cross-platform framework Qt.
+
+Package: libjreen1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt XMPP Library 
+ Jreen — Free and Opensource Jabber library, written in C++ using cross-platform framework Qt.
